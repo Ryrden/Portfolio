@@ -1,0 +1,49 @@
+:root{
+    --white: #FBFBFB;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    color: var(--white);
+}
+
+
+body{
+    background-image: url('img/retrowave\ car\ Home.jpg');
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    padding: 0.8em;
+}
+
+
+#homepage {
+    display: flex;
+    height: 85vh;
+    align-items: center;
+}
+
+#homepage div {
+    width: 50%;
+}
+
+#homepage p {
+    margin-left: 1em;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#homepage img {
+    width: 100%;
+    height: 50%;
+}
