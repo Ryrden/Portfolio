@@ -1,40 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root{
-    --white: #FBFBFB;
+    --white: #f30000;
+    --black: #000;
+    --gray: rgb(148, 148, 148);
 }   
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
     color: var(--white);
 }
 
+*::before, *::after {
+    box-sizing: border-box;
+}
 
 body{
+    font-family: 'Quantico', sans-serif;
     background-image: url('img/retrowave\ car\ Home.jpg');
     position: absolute;
-    background-size: 100%;
+    background-size: 100% 95vh;
     background-repeat: no-repeat;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+
+}
+
+main{
+    margin-left: 1.5em;
 }
 
 nav a{
     padding: 0.8em;
 }
 
-
-#homepage {
-    display: flex;
-    height: 85vh;
-    align-items: center;
+.topic {
+    height: 50vh;
 }
 
-#homepage div {
+.subTitle {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.subSubTitle{
+    margin-bottom: 1em;
+}
+
+section {
+    display: flex;
+}
+
+section article {
     width: 50%;
+}
+
+#homepage {
+    height: 85vh;
+    align-items: center;
 }
 
 #homepage p {
@@ -43,7 +70,82 @@ nav a{
     font-weight: bolder;
 }
 
-#homepage img {
-    width: 100%;
-    height: 50%;
+.item {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.itemLogo {
+    display: flex;
+    align-items: center;
+}
+
+.itemContent {
+    margin-left: 2em;
+}
+
+.itemContent ul {
+    list-style-type: none;
+}
+
+.itemLogo img {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.itemTitle {
+    font-weight: 700;
+}
+
+.itemSubTitle {
+    font-weight: 500;
+}
+
+.itemTextMuted {
+    font-weight: 50;
+    color: var(--gray);
+}
+
+#projects {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 65vh;
+}
+
+#projects div {
+    border-radius: 1.5em;
+    height: 200px;
+    width: 400px;
+    background-color: #000;
+}
+
+#contact article{   
+    flex-direction: column;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px;
+    padding: 5px 200px;
+}
+
+button {
+    width: 10em;
+}
+
+#textArea {
+    padding: 75px 200px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 1.5em;
 }
