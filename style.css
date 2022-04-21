@@ -4,6 +4,7 @@
     --white: #ffffff;
     --black: #000;
     --gray: rgb(148, 148, 148);
+    --purple: rgb(81, 0, 69);
 }   
 
 * {
@@ -35,8 +36,16 @@ main{
     margin-left: 1.5em;
 }
 
+nav{
+    position: sticky;
+    top: 0px;
+}
+
 nav a{
     padding: 0.8em;
+
+    text-decoration: none;
+    margin: 0px 10px;
 }
 
 .topic {
@@ -119,10 +128,20 @@ section article {
 }
 
 #projects div {
-    border-radius: 1.5em;
     height: 200px;
     width: 400px;
-    background-color: blue;
+    border-radius: 1.5em;
+    background-color: black;
+}
+
+#projects img:hover {
+    opacity: 0.6;
+}
+#projects img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5em;
+    transition: opacity ease-in 0.25s;
 }
 
 #contact article{   
@@ -152,4 +171,13 @@ footer {
     margin-top: 50px;
     text-align: center;
     padding: 1.5em;
+}
+
+#social_footer a{
+    margin: 0 5px 0 5px;
+}
+
+#social_footer a i:hover{
+    color: var(--purple);
+    transition: color ease-in 0.1s;
 }
