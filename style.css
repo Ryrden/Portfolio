@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --white: #f30000;
+    --white: #ffffff;
     --black: #000;
     --gray: rgb(148, 148, 148);
 }   
@@ -17,10 +17,11 @@
 }
 
 body{
+    background-color: var(--black);
     font-family: 'Quantico', sans-serif;
     background-image: url('img/retrowave\ car\ Home.jpg');
     position: absolute;
-    background-size: 100% 95vh;
+    background-size: 100% 85vh;
     background-repeat: no-repeat;
 }
 
@@ -39,15 +40,17 @@ nav a{
 }
 
 .topic {
-    height: 50vh;
+    margin-bottom: 2em;
 }
 
 .subTitle {
     width: 100%;
+    color: var(--white);
     margin-bottom: 0.5em;
 }
 
 .subSubTitle{
+    color: var(--white);
     margin-bottom: 1em;
 }
 
@@ -56,7 +59,7 @@ section {
 }
 
 section article {
-    width: 50%;
+    width: 75%;
 }
 
 #homepage {
@@ -72,6 +75,7 @@ section article {
 
 .item {
     display: flex;
+    height: auto;
     margin-bottom: 1em;
 }
 
@@ -118,7 +122,7 @@ section article {
     border-radius: 1.5em;
     height: 200px;
     width: 400px;
-    background-color: #000;
+    background-color: blue;
 }
 
 #contact article{   
