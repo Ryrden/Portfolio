@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-    --white: #ffffff;
-    --black: #000;
+    --white: #fbfbfb;
+    --black: #0f0f0f;
     --gray: rgb(148, 148, 148);
-    --purple: rgb(81, 0, 69);
+    --purple: #553254;
 }   
 
 * {
@@ -18,34 +18,36 @@
 }
 
 body{
-    background-color: var(--black);
     font-family: 'Quantico', sans-serif;
     background-image: url('img/retrowave\ car\ Home.jpg');
+    background-repeat: no-repeat;
+    background-color: var(--black);
     position: absolute;
     background-size: 100% 85vh;
-    background-repeat: no-repeat;
 }
 
-header {
+#navBar {
     display: flex;
     justify-content: space-between;
-
-}
-
-main{
-    margin-left: 1.5em;
-}
-
-nav{
+    padding: 10px;
     position: sticky;
     top: 0px;
+    transition: background-color ease-in 0.25s;
 }
 
-nav a{
+#navBar nav a{
     padding: 0.8em;
 
     text-decoration: none;
     margin: 0px 10px;
+}
+
+.nav-active {
+    background-color: var(--purple);
+}
+
+main{
+    margin-left: 1.5em;
 }
 
 .topic {
@@ -53,13 +55,17 @@ nav a{
 }
 
 .subTitle {
+    text-align: center;
     width: 100%;
+    font-size: 2.5em;
     color: var(--white);
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .subSubTitle{
+    text-align: center;
     color: var(--white);
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 
